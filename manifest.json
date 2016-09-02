@@ -1,0 +1,12 @@
+{
+  "name": "MIDI Sheets",
+  "description": "Generate sheet music from single lines of music",
+  "version": "0.1",
+  "manifest_version": 2,
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "permissions": ["tabs", "audioCapture"]
+}

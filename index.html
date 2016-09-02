@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <!-- <script src="./node_modules/angular/angular.min.js" defer></script> -->
+  <!-- <script src="./node_modules/underscore/underscore-min.js" defer></script> -->
+  <script src="./node_modules/vexflow/releases/vexflow-min.js" defer></script>
+  <script src="./node_modules/jquery/dist/jquery.min.js" defer></script>
+  <!-- <script src="./PitchDetect/js/pitchdetect.js" defer></script> -->
+  <!-- <script src="./piano.js" defer></script> -->
+  <!-- <script src="./index.js" defer></script> -->
+  <script src="./app.js" defer></script>
+</head>
+<body class="background" ng-app="transcribe" ng-controller="btnController">
+  <div class="col-sm-12">
+    <h1>Transcribe your music!</h1>
+  <div class="col-sm-12">
+  <form>
+    <input type="text" ng-model="bpm" style="width: 50px; border-radius:5px">
+    <button class="btn" ng-click="time()">Enter BPM</button>
+  </form>
+  </div>
+  </div>
+  <div class="col-sm-12" style="padding: 10px">
+  <button class="btn btn-success" ng-click="onRecord()">Start Transcribing!</button>
+  <button class="btn btn-danger" ng-click="onStop()">Stop</button>
+  </div>
+  <div class="col-sm-12" ng-show="listening">
+    <h4>Recording <span class="fa fa-circle-o-notch fa-spin" style="font-size:24px"></span></h4>
+  </div>
+
+  <div class="col-sm-12" id="boo"></div>
+
+  <div class="col-sm-12"></div>
+
+</body>
+</html>
+
+
