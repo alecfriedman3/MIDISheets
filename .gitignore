@@ -1,3 +1,4 @@
 PitchDetect
 *.mid
 **/*.mid
+**/*ignore.js
